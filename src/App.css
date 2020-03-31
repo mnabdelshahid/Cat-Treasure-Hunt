@@ -1,0 +1,47 @@
+#gamebox{
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    height :300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#container{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 5px;
+    font-family:fantasy;
+}
+
+.Boxes{
+    height:100px;
+    width:100px;
+    border: 2px solid black;
+    font-size: 40px;
+
+}
+
+body{
+  background-color: rgba(50, 115, 220, 0.3);
+
+}
+#dog{
+    width:500px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#dogWin{
+    width:400px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#dogLose{
+    width:400px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
