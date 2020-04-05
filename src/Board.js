@@ -33,7 +33,7 @@ class Board extends Component{
             boxes[index] = "😸"
             this.setState({
                 boxes: boxes,
-                gameWin: true
+                gameWinning: true
             })
             window.setTimeout(function(){window.location.reload()}, 200);
             window.setTimeout(function(){alert("You found it!")}, 200);
@@ -74,6 +74,7 @@ class Board extends Component{
 
 
     render(){
+      // eslint-disable-next-line
         let {boxes, winningBox} = this.state
         let square = boxes.map((value, index)=> {
             return (
@@ -98,11 +99,11 @@ class Board extends Component{
                 </div>}
                 {this.state.gameWinning&&
                     <div id="gameOn">
-                    <img id="dogWin" src="https://i.pinimg.com/originals/96/08/01/9608013d59b26f2ee9494d8183569aa0.jpg"  />
+                    <img id="dogWin" src="https://i.pinimg.com/originals/25/ea/64/25ea6471cfdc1d807ff46752cbc53598.gif"  alt="GIF"/>
                 </div>}
                 {this.state.gameLosing &&
                     <div id="gameOff">
-                    <img id="dogLose" src="https://i.makeagif.com/media/3-03-2014/dDpSe0.gif"  />
+                    <img id="dogLose" src="https://i.makeagif.com/media/3-03-2014/dDpSe0.gif" alt="GIF" />
                 </div>}
             <h1>Boxes Left : {this.state.counters}</h1>
             <button onClick = {this.restartGame}> Restart Game </button>
